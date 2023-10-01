@@ -1,0 +1,24 @@
+# .bashrc
+
+```bash
+source <(kubectl completion bash)
+echo "source <(kubectl completion bash)" >> ~/.bashrc
+alias k=kubectl
+complete -F __start_kubectl k
+
+alias kd="k describe"
+export do="--dry-run=client -o yaml"
+```
+
+# .vimrc
+
+```vim
+set tabstop=2
+set expandtab
+set shiftwidth=2
+set autoindent
+
+set nu
+set ignorecase
+syntax on
+```
