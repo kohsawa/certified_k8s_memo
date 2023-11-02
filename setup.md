@@ -9,6 +9,7 @@ complete -F __start_kubectl k
 alias kd="k describe"
 alias grep="grep -i"
 export do="--dry-run=client -o yaml"
+alias kn='kubectl config set-context --current --namespace'
 ```
 
 # .vimrc
